@@ -8,7 +8,7 @@ import javax.ejb.EJB;
 import javax.servlet.annotation.WebServlet;
 @WebServlet(name= "ServletClient", urlPatterns={"/ServletClient"})
 public class ServletClient extends HttpServlet {
-    @EJB CounterServletHitsBean CounterBean;
+    @EJB CountServletHitsBean CounterBean;
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
