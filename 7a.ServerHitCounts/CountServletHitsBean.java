@@ -11,7 +11,7 @@ import javax.ejb.Singleton;
  * @author Abhishek
  */
 @Singleton
-public class CounterServletHitsBean {
+public class CountServletHitsBean {
     private int hitcount;
 
     public int incrementAndGetHitCount()
