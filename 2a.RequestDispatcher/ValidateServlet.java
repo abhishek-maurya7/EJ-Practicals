@@ -1,12 +1,10 @@
 import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
-
 public class ValidateServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
         response.setContentType("text/html");
         try ( PrintWriter out = response.getWriter()) {
             String username=request.getParameter("un");
@@ -23,4 +21,5 @@ public class ValidateServlet extends HttpServlet {
             }
         }
     }
+}
 }
